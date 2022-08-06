@@ -1,0 +1,132 @@
+/* Start fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* End fonts */
+
+/* Start Variables */
+
+:root{
+    --main-padding:45px;
+    --main-margin:200px auto ;
+    --main-background:hsl(233, 47%, 7%);
+    --card-background:hsl(244, 38%, 16%);
+}
+
+/* End Variables */
+
+/* Start global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+@media (max-width: 375px){
+    .container{
+        padding: 25px;
+    }
+}
+.container{
+    padding: var(--main-padding);
+}
+/* End global */
+main{
+    width: 700px;
+    margin: var(--main-margin);
+}
+@media (max-width: 375px){
+    main{
+        width: 350px;
+    }
+}
+header{
+    flex-basis: 100%;
+    background-color: white;
+}
+h1{
+    margin-bottom: 20px;
+    color: hsl(179, 62%, 43%);
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 26px;
+    }
+}
+h2{
+    font-size: 20px;
+}
+@media (max-width: 375px){
+    h2{
+        font-size: 18px;
+    }
+}
+header h2{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+header p{
+    line-height: 1.5;
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+}
+.bottom{
+    display: flex;
+}
+@media (max-width: 375px){
+    .bottom{
+        flex-direction: column;
+    }
+}
+section h2{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.left{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.right{
+    color: hsl(217, 23%, 80%);
+    font-weight: 100;
+    
+}
+.section-left p{
+    line-height: 2;
+    color: hsl(204, 43%, 93%);
+    margin-top: -5px;
+    
+}
+button{
+    padding: 15px;
+    width: 240px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 1px 10px 20px hsl(179, 63%, 16%);
+    
+}
+.section-left{
+    background-color: hsl(179, 62%, 43%);
+    flex-basis: 50%;
+}
+.section-right{
+    background-color: hsl(179, 54%, 53%);
+    flex-basis: 50%;
+}
+.section-right p{
+    line-height: 1.5;
+    color: hsl(205, 23%, 90%);
+    margin-bottom: -10px;
+}
